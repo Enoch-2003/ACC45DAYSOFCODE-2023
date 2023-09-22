@@ -1,0 +1,21 @@
+// written in C++
+#include <iostream>
+using namespace std;
+int main(){
+    int t,N;
+    cin>>t;
+    while(t--){
+        cin>>N;
+        if(N%2==0)
+            cout<<"Sorry, Only odd numbers are accepted"<<endl;
+        else{
+            int i=1,j=N;
+            while(i!=j){
+                i++;
+                j--;
+            }
+            cout<<i<<endl;
+        }
+    }
+   return 0;
+}
